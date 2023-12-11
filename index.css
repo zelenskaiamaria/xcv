@@ -1,0 +1,158 @@
+body{
+    font-family: 'Kufam', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media(max-width: 840px){
+   .front__page{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+   }
+}
+@media(min-width: 400px){
+    .front__page{
+     height: 100vh;
+    }
+    .nebulas__img{ 
+        box-shadow:  12px 16px 3px rgba(40, 39, 39, 0.842);
+    }
+ }
+
+.front__page{
+    background: url("starsky.webp");
+    height: max-content;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .nebula__exp{
+     font-size: 20px;
+     font-weight: 100;
+     color: aliceblue;
+     display: inline-flex;
+     margin: 5px 7px;
+     animation-name: planetary__neb__exp;
+     animation-duration: 1.5s;
+ }
+ .nebula__exp__block{
+     max-width: 400px;
+     width: 100%;
+     margin: 5vw;
+ }
+ 
+ .nebulas__img{
+     border-radius: 10px;
+     margin-right: 10vw;
+     max-width: 250px;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+     animation-name: planetary__neb__img;
+     animation-duration: 0.7s;
+ }
+ .nebulas__img__block{
+    margin-right: 10vw;
+    margin: 30lvh 0;
+    margin-right: 5vw;
+ }
+ @keyframes planetary__neb__img{
+    0%{
+        position: relative;
+        left: 500px;
+    }
+    100%{
+        position: relative;
+        left: 0;
+    }
+ }
+ @keyframes planetary__neb__exp{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+ }
+ .strelka{
+    border-block: solid 2px white;
+    position: absolute;
+    top: calc(100vh - 50px);
+    
+ }
+ .second__page{
+    background: url("starsky.webp"); 
+    height: auto;
+    padding: 10px 0 0 0;
+    margin: 0;
+    border-top:   2px solid #5c5b5c;
+    display: flex;
+   flex-direction: column;
+   align-items: end;
+ }
+ .text__look__for__block{
+    width: 100%;
+    max-width: 200px;
+    margin-left: 2vw;
+    display: flex;
+    align-self: start;
+ }
+
+ .img1:hover{
+   opacity: 1;
+ }
+
+ .img1{
+    max-width: 30vh;
+    width: 100%;
+    border-radius: 10%;
+    margin-right: 70vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+ 
+ .int__fact1__block{
+    width: 100%;
+    max-width: 400px;
+ }
+ .int__fact1:hover{
+    opacity: 1;
+ }
+ .int__fact1{
+    margin-right: 10vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+ .img2:hover{
+    opacity: 1;
+  }
+ 
+ .img2{
+    max-width: 30vh;
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 80vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+ .int__fact2__block{
+    width: 100%;
+    max-width: 400px;
+ }
+ .int__fact2:hover{
+    opacity: 1;
+ }
+ .int__fact2{
+    margin-right: 9vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
